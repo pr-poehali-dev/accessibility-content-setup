@@ -35,7 +35,7 @@ const Index = () => {
     { id: 2, name: 'Классические часы', price: 8500, category: 'Настенные', image: 'https://cdn.poehali.dev/files/3.jpg' },
     { id: 3, name: 'Часы с минутными делениями', price: 9200, category: 'Настенные', image: 'https://cdn.poehali.dev/files/5.jpg' },
     { id: 4, name: 'Синие кварцевые часы', price: 6700, category: 'Настенные', image: 'https://cdn.poehali.dev/files/1.jpg' },
-    { id: 5, name: 'Часы с красной стрелкой', price: 7800, category: 'Настенные', image: 'https://cdn.poehali.dev/files/3.jpg' },
+    { id: 5, name: 'Эскизные часы', price: 4500, category: 'Настенные', image: 'https://cdn.poehali.dev/files/5310077877657209674.jpg' },
     { id: 6, name: 'Элегантные часы', price: 11900, category: 'Настенные', image: 'https://cdn.poehali.dev/files/2.jpg' },
   ];
 
