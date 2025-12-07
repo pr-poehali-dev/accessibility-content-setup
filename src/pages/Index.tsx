@@ -31,18 +31,18 @@ const Index = () => {
   const [address, setAddress] = useState('');
 
   const products: Product[] = [
-    { id: 1, name: 'Минималистичные часы', price: 8900, category: 'Аксессуары', image: '/placeholder.svg' },
-    { id: 2, name: 'Керамическая ваза', price: 3200, category: 'Декор', image: '/placeholder.svg' },
-    { id: 3, name: 'Кожаный кошелек', price: 4500, category: 'Аксессуары', image: '/placeholder.svg' },
-    { id: 4, name: 'Настольная лампа', price: 6700, category: 'Декор', image: '/placeholder.svg' },
-    { id: 5, name: 'Текстильная сумка', price: 2800, category: 'Аксессуары', image: '/placeholder.svg' },
-    { id: 6, name: 'Набор свечей', price: 1900, category: 'Декор', image: '/placeholder.svg' },
+    { id: 1, name: 'Часы Howard Miller', price: 12900, category: 'Настенные', image: 'https://cdn.poehali.dev/files/2.jpg' },
+    { id: 2, name: 'Классические часы', price: 8500, category: 'Настенные', image: 'https://cdn.poehali.dev/files/3.jpg' },
+    { id: 3, name: 'Часы с минутными делениями', price: 9200, category: 'Настенные', image: 'https://cdn.poehali.dev/files/5.jpg' },
+    { id: 4, name: 'Синие кварцевые часы', price: 6700, category: 'Настенные', image: 'https://cdn.poehali.dev/files/1.jpg' },
+    { id: 5, name: 'Часы с красной стрелкой', price: 7800, category: 'Настенные', image: 'https://cdn.poehali.dev/files/3.jpg' },
+    { id: 6, name: 'Элегантные часы', price: 11900, category: 'Настенные', image: 'https://cdn.poehali.dev/files/2.jpg' },
   ];
 
   const reviews = [
-    { name: 'Анна К.', text: 'Отличное качество товаров! Доставка быстрая, упаковка аккуратная.', rating: 5 },
-    { name: 'Михаил П.', text: 'Минималистичный дизайн — это то, что я искал. Рекомендую!', rating: 5 },
-    { name: 'Елена С.', text: 'Очень довольна покупкой. Всё соответствует описанию.', rating: 5 },
+    { name: 'Анна К.', text: 'Купили часы для офиса — идеальное качество! Точный ход, красивый дизайн.', rating: 5 },
+    { name: 'Михаил П.', text: 'Часы Howard Miller превзошли ожидания. Классика, которая никогда не выйдет из моды.', rating: 5 },
+    { name: 'Елена С.', text: 'Заказывала настенные часы для гостиной. Пришли быстро, упакованы отлично!', rating: 5 },
   ];
 
   const addToCart = (product: Product) => {
@@ -135,7 +135,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold tracking-tight">MINIMAL SHOP</h1>
+            <h1 className="text-2xl font-bold tracking-tight">TIME STORE</h1>
             <nav className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection('home')}
@@ -323,10 +323,10 @@ const Index = () => {
         <section id="home" className="py-20 md:py-32 bg-gradient-to-b from-secondary to-background">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              Минимализм в каждой детали
+              Время имеет значение
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Тщательно отобранные товары для тех, кто ценит простоту, качество и функциональность
+              Настенные часы премиум-класса для дома и офиса. Точность, стиль и качество в каждой модели
             </p>
             <Button size="lg" onClick={() => scrollToSection('catalog')} className="gap-2">
               Смотреть каталог
@@ -373,14 +373,14 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">О магазине</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Мы создали пространство для тех, кто ценит минималистичный дизайн и качественные вещи. 
-                Каждый товар в нашем каталоге тщательно отобран и соответствует принципам функциональности 
-                и эстетики.
+                TIME STORE — это специализированный магазин настенных часов премиум-класса. Мы работаем 
+                с ведущими производителями, включая Howard Miller, чтобы предложить вам часы, которые 
+                сочетают точность швейцарских механизмов с безупречным дизайном.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Наша команда работает напрямую с производителями, чтобы гарантировать высокое качество 
-                каждого изделия. Мы верим, что меньше — это больше, и стремимся помочь вам создать 
-                пространство, наполненное только самым необходимым и красивым.
+                Каждая модель в нашем каталоге проходит строгий контроль качества. Мы верим, что часы — 
+                это не просто прибор для измерения времени, а важная часть интерьера, отражающая ваш 
+                стиль и статус. Доставляем по всей России с гарантией качества.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div>
@@ -505,7 +505,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold mb-2">MINIMAL SHOP</h3>
+              <h3 className="text-xl font-bold mb-2">TIME STORE</h3>
               <p className="text-sm opacity-80">© 2024 Все права защищены</p>
             </div>
             
